@@ -2,7 +2,7 @@
 #
 name: Hépathologue de Mondor
 author: Jean-Baptiste Richardet
-baseurl:
+baseurl: /testJekyll
 description: Site de l'association d'hépathologue d'Henri Mondor
 email: contact[at]aphp.fr
 
