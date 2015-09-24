@@ -17,3 +17,10 @@ window.onload = function() {
     }
   }
 }
+
+function calculateScore(){
+  var age = document.score.age.value;
+  var color = document.score.color.value;
+  var opinion = document.score.opinion.value;
+  document.getElementById('result').textContent = 'Le capitaine a '+age+' ans, aime le '+color+' et c\'est '+opinion+' !';
+}

@@ -1,0 +1,28 @@
+---
+title: Score BUT
+---
+<div class="container">
+  <div class="container">
+    <h1>Calculer votre score BUT</h1>
+    <form name="score" action="javascript:calculateScore()">
+      <fieldset>
+        <label for="age">Age du capitaine</label>
+        <input type="number" name="age" placeholder="42" min="0">
+      </fieldset>
+      <fieldset>
+        <label for="color">Couleur préférée</label>
+        <input type="color" name="color">
+      </fieldset>
+      <fieldset>
+        <label for="opinion">Vous trouvez ce site...</label>
+        <select name="opinion">
+          <option value="chouette">Chouette</option>
+          <option value="top">Top</option>
+          <option value="cool">Cool</option>
+        </select>
+      </fieldset>
+      <input type="submit" value="Calculer">
+    </form>
+    <p id="result"></p>
+  </div>
+</div>
