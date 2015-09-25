@@ -1,9 +1,9 @@
 ## Using https://github.com/arnp/herring-cove theme
 #
-name: Hépathologue de Mondor
+name: Unité de Transplantation Hépatique
 author: Jean-Baptiste Richardet
 baseurl: /testJekyll
-description: Site de l'association d'hépathologue d'Henri Mondor
+description: Hôpital Henri Mondor Créteil
 email: contact[at]aphp.fr
 
 ##Make sure to edit the above fields, especially for disqus.
