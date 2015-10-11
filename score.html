@@ -3,23 +3,30 @@ title: Unité de Transplantation Hépatique - Score aFoetoProteines
 ---
 <div class="container">
   <div class="container">
-    <h1>Calculer votre score aFoetoProteine</h1>
+    <h1>Calculer le score &#945;FoetoProteine</h1>
     <form name="score" action="javascript:calculateScore()">
       <fieldset>
-        <label for="age">Age du capitaine</label>
-        <input type="number" name="age" placeholder="42" min="0">
+        <label for="size">Diamètre maximal</label>
+        <ul>
+          <li><input type="radio" name="size" value="low">&#8804;3</input></li>
+          <li><input type="radio" name="size" value="mid">3-6</input></li>
+          <li><input type="radio" name="size" value="high">&gt;6</input></li>
+        </ul>
       </fieldset>
       <fieldset>
-        <label for="color">Couleur préférée</label>
-        <input type="color" name="color">
+        <label for="color">Nombre de nodules</label>
+        <ul>
+          <li><input type="radio" name="number" value="low">1-3</input></li>
+          <li><input type="radio" name="number" value="high">&#8805;4</input></li>
+        </ul>
       </fieldset>
       <fieldset>
-        <label for="opinion">Vous trouvez ce site...</label>
-        <select name="opinion">
-          <option value="chouette">Chouette</option>
-          <option value="top">Top</option>
-          <option value="cool">Cool</option>
-        </select>
+        <label for="opinion">&#945;FP</label>
+        <ul>
+          <li><input type="radio" name="protein" value="low">&#8804;100</input></li>
+          <li><input type="radio" name="protein" value="mid">100-1000</input></li>
+          <li><input type="radio" name="protein" value="high">&gt;1000</input></li>
+        </ul>
       </fieldset>
       <input type="submit" value="Calculer">
     </form>

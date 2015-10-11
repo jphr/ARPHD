@@ -19,8 +19,30 @@ window.onload = function() {
 }
 
 function calculateScore(){
-  var age = document.score.age.value;
-  var color = document.score.color.value;
-  var opinion = document.score.opinion.value;
-  document.getElementById('result').textContent = 'Le capitaine a '+age+' ans, aime le '+color+' et c\'est '+opinion+' !';
+  var result = document.getElementById('result');
+  result.classList.remove('good');
+  result.classList.remove('bad');
+  var score = 0;
+  switch (document.score.size.value){
+    case 'mid':
+      score += 1;
+      break;
+    case 'high':
+      score += 4;
+      break;
+    default:
+  }
+  if(document.score.number.value === 'high') score += 2;
+  switch (document.score.size.value){
+    case 'mid':
+      score += 2;
+      break;
+    case 'high':
+      score += 3;
+      break;
+    default:
+  }
+
+  result.textContent = score;
+  result.classList.add(score <= 2 ? 'good' : 'bad');
 }
