@@ -32,11 +32,10 @@
     <li><a href="{{ site.baseurl }}/projects.html">Nos Projets</a></li>
     <li><a href="{{ site.baseurl }}/about.html">À propos</a></li>
     <hr />
-    <!-- <div id="social-wrapper">
-      <li> <a href="{{ site.twitter }}"><i class="fa fa-twitter-square"></i> @twitter</a></li>
-      <li> <a href="{{ site.linkedin }}"><i class="fa fa-linkedin-square"></i> linkedin</a> </li>
-      <li> <a href="{{ site.facebook }}"><i class="fa fa-facebook-square"></i> facebook</a></li>
-      <li> <a href="{{ site.github }}"><i class="fa fa-github-square"></i> github</a> </li>
-    </div> -->
+    {% for lab in site.data.labo %}
+      <a class="pharma" target="_blank" href="{{lab.url}}">
+        <img src="{{ lab.image }}" alt="{{lab.name}}" />
+      </a>
+    {% endfor %}
   </ul>
 </div>

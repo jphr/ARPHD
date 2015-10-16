@@ -138,17 +138,16 @@ li{
   border-top:solid #00A3D9;
   transition:all .4s ease 0;
   border-width:4px;
-  padding-left: 10px;
 }
 
 .sidebar-nav
 {
   position:absolute;
   top:0;
-  width:250px;
+  width:100%;
   list-style:none;
   margin:0;
-  padding:30px 0 0
+  padding:30px 10px 0
 }
 
 .sidebar-nav li
@@ -715,9 +714,17 @@ time
   background-color:#2FD0EF
 }
 
+.score {
+  font-size: 20px;
+}
+
 #result{
   margin: 5px;
   padding: 2px;
+}
+
+.pharma > img{
+  width: 100%;
 }
 
 #menu-toggle,.project-post div

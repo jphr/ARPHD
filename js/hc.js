@@ -33,7 +33,7 @@ function calculateScore(){
     default:
   }
   if(document.score.number.value === 'high') score += 2;
-  switch (document.score.size.value){
+  switch (document.score.protein.value){
     case 'mid':
       score += 2;
       break;
