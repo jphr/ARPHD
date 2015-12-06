@@ -1,5 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+@keyframes unfold{
+  from{
+    max-height: 0;
+  }
+  to {
+    max-height: 390px;
+  }
+}
+
+@keyframes fold{
+  from{
+    max-height: 390px;
+  }
+  to {
+    max-height: 0;
+  }
+}
 
 body
 {
@@ -740,6 +757,16 @@ time
   height: 390px;
   padding-bottom: 30px;
   transition: height 1s ease-out, padding-bottom 1s ease-out;
+}
+
+.navbar-collapse{
+  overflow-y: hidden;
+}
+
+.navbar-collapse.collapse{
+  display: block;
+  overflow: hidden;
+  max-height: 0;
 }
 
 #article h1,#article h2,#article h3

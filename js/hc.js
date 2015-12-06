@@ -16,6 +16,22 @@ window.onload = function() {
       this.classList.toggle('show');
     }
   }
+
+  var animationListener;
+  animationListener = function () {
+    this.classList.toggle('collapse');
+    this.removeEventListener('animationend', animationListener);
+  }
+
+  // button toggle
+  var buttons = document.getElementsByClassName('navbar-toggle');
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function () {
+      var target = document.querySelector(this.getAttribute('data-target'));
+      target.addEventListener('animationend', animationListener);
+      target.style.animation = target.classList.contains('collapse')?'unfold 1s':'fold 1s';
+    }
+  }
 }
 
 function calculateScore(){
