@@ -379,13 +379,12 @@ pre
 {
   bottom:0;
   width:100%;
+  text-align: center;
   font-size:.8em;
   text-shadow:1px 1px #fff;
-  padding-left:20px;
   margin-bottom:0;
   padding-bottom:5px;
   padding-top:5px;
-  margin-top:40px;
   z-index:1;
   color:#cdcdcd
 }
