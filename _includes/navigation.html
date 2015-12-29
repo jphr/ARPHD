@@ -11,10 +11,15 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-      <li><a href="{{ site.baseurl }}/score.html">Score aFoetoProteine</a></li>
-      <li><a href="{{ site.baseurl }}/blog.html">Notre blog</a></li>
-      <li><a href="{{ site.baseurl }}/publications.html">Nos Publications</a></li>
-      <li><a href="{{ site.baseurl }}/contact.html">À propos</a></li>
+			{% for section in site.data.pages %}
+			<li>
+				<h3>{{ section.title }}</h3>
+				<ul>
+				{% for subsection in section.subtitles %}
+				<li><a href="{{ site.baseurl }}{{ subsection.href }}">{{ subsection.title }}</a></li>
+				{% endfor %}
+				</ul>
+			{% endfor %}
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -25,11 +30,15 @@
   <ul class="sidebar-nav">
     <li class="sidebar-brand"><a href="{{ site.baseurl }}/"><h1 class="brand">{{ site.name }}</h1></a><h3>{{ site.description }}</h3></li>
     <hr />
-    <li><a href="{{ site.baseurl }}/score.html">Score aFoetoProteine</a></li>
-    <li><a href="{{ site.baseurl }}/blog.html">Notre blog</a></li>
-    <li><a href="{{ site.baseurl }}/publications.html">Nos Publications</a></li>
-    <li><a href="{{ site.baseurl }}/contact.html">À propos</a></li>
-    <hr />
+			{% for section in site.data.pages %}
+			<li>
+				<h3>{{ section.title }}</h3>
+				<ul>
+				{% for subsection in section.subtitles %}
+				<li><a href="{{ site.baseurl }}{{ subsection.href }}">{{ subsection.title }}</a></li>
+				{% endfor %}
+				</ul>
+			{% endfor %}    <hr />
     {% for lab in site.data.labo %}
       <a class="pharma" target="_blank" href="{{lab.url}}">
         <img src="{{ lab.image }}" alt="{{lab.name}}" />
