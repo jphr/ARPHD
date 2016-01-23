@@ -1,4 +1,6 @@
-- title: Général
+- id: 1
+  title: Général
+  icon: user
   subtitles:
     - title: Présentation de l'équipe
       href: /contact.html
@@ -6,13 +8,22 @@
     - title: Notre actualité
       href: /blog.html
 
-- title: Accès médecin
+- id: 2
+  title: Accès médecin
+  icon: plus
   subtitles:
     - title: Score aFoetoProteine
       href: /score.html
 
     - title: Nos publications
       href: /publications.html
-      
+
     - title: Machine à perfuser
       href: /machine.html
+
+- id: 3
+  title: Accès infirmier
+  icon: info-sign
+  subtitles:
+    - title: Questions fréquentes
+      href: /faq.html

@@ -31,18 +31,19 @@
     <li class="sidebar-brand"><a href="{{ site.baseurl }}/"><h1 class="brand">{{ site.name }}</h1></a><h3>{{ site.description }}</h3></li>
     <hr />
 			{% for section in site.data.pages %}
-			<li>
-				<h3>{{ section.title }}</h3>
-				<ul>
+			<li class="ac-container">
+        <input id="{{section.id}}" name="accordion-1" type="checkbox" />
+        <label for="{{section.id}}"><span class="glyphicon glyphicon-{{section.icon}}" aria-hidden="true"></span>{{ section.title }}</label>
+				<ul class="ac-small">
 				{% for subsection in section.subtitles %}
 				<li><a href="{{ site.baseurl }}{{ subsection.href }}">{{ subsection.title }}</a></li>
 				{% endfor %}
 				</ul>
 			{% endfor %}    <hr />
-    {% for lab in site.data.labo %}
+    <!-- {% for lab in site.data.labo %}
       <a class="pharma" target="_blank" href="{{lab.url}}">
         <img src="{{ lab.image }}" alt="{{lab.name}}" />
       </a>
-    {% endfor %}
+    {% endfor %} -->
   </ul>
 </div>
