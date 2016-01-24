@@ -170,7 +170,6 @@ li{
 .sidebar-nav li
 {
   line-height:30px;
-  text-indent:1em;
   font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
   font-weight:200;
   color:#9c9c9c;
@@ -224,7 +223,6 @@ li{
   font-size:1.3em;
   text-shadow:1px 1px #fff;
   text-align: left;
-  text-indent: 0;
 }
 
 .brand:hover
@@ -354,21 +352,14 @@ pre
   line-height:130%
 }
 
-#welcome-greeting h1:hover
-{
-  font-size:3em;
-  font-weight:700;
-  color:#2d4440;
-  transition:all .5s ease 0
-}
-
 #welcome-greeting > h2
 {
   font-size:2em;
   font-weight:100;
   color:#2e2e2e;
   padding-top:0;
-  line-height:140%
+  line-height:140%;
+  text-align: justify;
 }
 
 #welcome-greeting h2 a

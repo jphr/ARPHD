@@ -85,7 +85,7 @@
 .lb-overlay div h3,
 .lb-overlay div p{
 	padding: 0px 20px;
-	max-width: 250px;
+	max-width: 277px;
 	height: 60px;
 }
 .lb-overlay div h3{
@@ -93,6 +93,9 @@
 	float: left;
 	text-align: right;
 	border-right: 1px solid rgba(27,54,81,0.4);
+	margin: 0;
+	height: auto;
+	color: rgb(27, 54, 81);
 }
 .lb-overlay div h3 span,
 .lb-overlay div p{
