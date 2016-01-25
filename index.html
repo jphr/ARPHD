@@ -6,13 +6,10 @@ title: Unité de Transplantation Hépatique - Hôpital Henri Mondor Créteil
 
 {% if site.posts != empty %}
 <div class="recent-posts">
-  <h1>Recent Posts</h1>
+  <h1>Dernière actualités</h1>
   {% for post in site.posts limit: 3 %}
     {% if forloop.first %}
       {% assign add_class = 'most-recent' %}
-      {% capture fresh_tag %}
-        &nbsp;<span class="badge"><smaller>FRESH</smaller></span>
-      {% endcapture %}
     {% endif %}
     <ul class="homepage-posts {{ add_class }}">
       <li>
@@ -33,7 +30,7 @@ title: Unité de Transplantation Hépatique - Hôpital Henri Mondor Créteil
     {% assign fresh_tag = '' %}
   {% endfor %}
   <ul>
-    <a href="{{ site.baseurl }}/list.html">View More...</a>
+    <a href="{{ site.baseurl }}/list.html">En voir plus...</a>
   </ul>
 </div>
 {% endif %}

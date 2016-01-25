@@ -2,250 +2,38 @@
 title: Unité de Transplantation Hépatique - Hôpital Henri Mondor Créteil
 ---
 <div class="container">
+  <div class="project-container">
+    <h1>Notre équipe</h1>
+  </div>
+
   <div class="container">
     <div class="row">
-      <!-- <div class="user-card">
-        <div class="row">
-          <div class="card col-md-3">
-            <img src="{{ site.baseurl }}/images/self.jpg">
-          </div>
-          <div class="col-md-9">
-            <h1>Association</h1>
-            <p><i class="fa fa-envelope-o"></i>&nbsp;{{ site.email }}</p>
-            <hr />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 letter">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-    </div> -->
     <ul class="lb-album">
+      {% for member in site.data.members %}
       <li>
-        <a href="#image-1">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
+      <a href="#image-{{ forloop.index }}">
+          <img src="images/{{member.photo}}" alt="{{ member.name }}">
+          <span>{{ member.name }}</span>
         </a>
-        <div class="lb-overlay" id="image-1">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
+        <div class="lb-overlay" id="image-{{ forloop.index }}">
+          <img src="images/{{ member.photo }}" alt="{{ member.name }}" />
           <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <!-- <a href="#image-10" class="lb-prev">Prec</a> -->
-              <a href="#image-2" class="lb-next">Suiv</a>
+            <h3>{{member.name}}</h3>
+            <p>{{member.bio}}</p>
+            {% if forloop.first == false %}
+            {% assign prec = forloop.index | minus: 1 %}
+              <a href="#image-{{ prec }}" class="lb-prev">Prec</a>
+            {% endif %}
+            {% if forloop.last == false %}
+            {% assign suiv = forloop.index | plus: 1 %}
+              <a href="#image-{{ suiv }}" class="lb-next">Suiv</a>
+            {% endif %}
             </div>
             <a href="#page" class="lb-close">X Fermer</a>
           </div>
         </li>
       <li>
-        <a href="#image-2">
-          <img src="images/jph-richardet.jpg" alt="Jean-Philippe Richardet">
-          <span>Jean-Philippe Richardet</span>
-        </a>
-        <div class="lb-overlay" id="image-2">
-          <img src="images/jph-richardet.jpg" alt="Jean-Philippe Richardet" />
-          <div>
-            <h3>Jean-Philippe Richardet</h3>
-              <p>Docteur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-1" class="lb-prev">Prec</a>
-              <a href="#image-3" class="lb-next">Suiv</a>
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-        <a href="#image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux">
-          <span>Christophe Duvoux</span>
-        </a>
-        <div class="lb-overlay" id="image-3">
-          <img src="images/christophe-duvoux.jpg" alt="Christophe Duvoux" />
-          <div>
-            <h3>Christophe Duvoux</h3>
-              <p>Professeur en transplantation du foie au CHU Henri Mondor de Créteil</p>
-              <a href="#image-2" class="lb-prev">Prec</a>
-              <!-- <a href="#image-2" class="lb-next">Suiv</a> -->
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
+      {% endfor %}
       </ul>
   </div>
 </div>
