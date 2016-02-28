@@ -23,8 +23,6 @@ body
   color:#2c3e50;
   background-color:#f0f0f0;
   width:100%;
-  border-top:solid #00A3D9;
-  border-width:4px
 }
 
 h1,h2,h3,h4,h5,h6
@@ -146,15 +144,15 @@ li{
   margin-left:-250px;
   left:250px;
   width:250px;
-  background:#f8f8f8;
+  background: transparent linear-gradient(to left top, white, rgb(0, 163, 217) 89%) repeat scroll 0% 0%;
   position:fixed;
   height:100%;
   overflow-y:auto;
   z-index:1000;
   margin-top:-4px;
-  border-top:solid #00A3D9;
   transition:all .4s ease 0;
   border-width:4px;
+  box-shadow: 2px 0px 7px 1px grey;
 }
 
 .sidebar-nav
@@ -205,7 +203,7 @@ li{
 {
   font-size:15px;
   font-weight:100;
-  color:#5d5f67
+  color: #333
 }
 
 .nav-toggle {
@@ -218,10 +216,10 @@ li{
 .brand
 {
   font-weight:800;
-  color:#6c7077;
+  color: white;
   font-family:"Helvetica Neue", helvetica, "Open Sans",sans-serif;
   font-size:1.3em;
-  text-shadow:1px 1px #fff;
+  text-shadow:1px 1px darkblue;
   text-align: left;
 }
 
@@ -307,8 +305,7 @@ pre
 .showcase-wrapper
 {
   width:100%;
-  height:80vh;
-  min-height:500px;
+  min-height:300px;
   margin-top:-30px;
   box-shadow:inset 0 -10px 5px -2px rgba(119,119,119,0.35);
   -moz-box-shadow:inset 0 -10px 5px -2px rgba(119,119,119,0.35);

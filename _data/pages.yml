@@ -1,29 +1,71 @@
 - id: 1
   title: Général
   icon: user
+  opened: true
   subtitles:
     - title: Présentation de l'équipe
       href: /contact.html
 
-    - title: Notre actualité
+    - title: Actualités
       href: /blog.html
+
+    - title: Partenaires
+      href: /partenaires.html
+
+    - title: Nous contacter
+      href: /contact.html
+
+    - title: Parcours de soin du greffé hépatique à Mondor
+      href: /parcours.html
+
+    - title: Ressources multimédiq
+      href: /resources.html
+
+- id: 4
+  title: Scores prédicitifs
+  icon: scale
+  opened: false
+  subtitles:
+    - title: Score aFoetoProteine
 
 - id: 2
   title: Accès médecin
   icon: plus
+  opened: false
   subtitles:
-    - title: Score aFoetoProteine
-      href: /score.html
-
-    - title: Nos publications
+    - title: Thématiques de recherches
       href: /publications.html
 
-    - title: Machine à perfuser
-      href: /machine.html
+    - title: Données sur la greffe
+      href: /transplant_data.html
+
+    - title: Actualité du congrès
+      href: /events.html
+
+    - title: Sociétés savantes
+      href: /learned_society.html
 
 - id: 3
-  title: Accès infirmier
+  title: Accès infirmier / Éducation thérapeutique
   icon: info-sign
+  opened: false
   subtitles:
     - title: Questions fréquentes
       href: /faq.html
+
+    - title: Livret thérapeutique
+      href: /guide.html
+
+    - title: Outils
+      href: /tools.html
+
+- id: 5
+  title: Les associations
+  icon: header
+  opened: false
+  subtitles:
+    - title: Henri Mondor ARPHD
+      href: /arphd.html
+   
+    - title: TransHepat
+      href: /transhepat.html

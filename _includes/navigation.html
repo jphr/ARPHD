@@ -32,7 +32,7 @@
     <hr />
 			{% for section in site.data.pages %}
 			<li class="ac-container">
-        <input id="{{section.id}}" name="accordion-1" type="checkbox" />
+		<input id="{{section.id}}" name="accordion-1" type="checkbox" {% if section.opened %} checked {% endif %}/>
         <label for="{{section.id}}"><span class="glyphicon glyphicon-{{section.icon}}" aria-hidden="true"></span>{{ section.title }}</label>
 				<ul class="ac-small">
 				{% for subsection in section.subtitles %}
