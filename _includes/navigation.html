@@ -34,7 +34,7 @@
 			<li class="ac-container">
 		<input id="{{section.id}}" name="accordion-1" type="checkbox" {% if section.opened %} checked {% endif %}/>
         <label for="{{section.id}}"><span class="glyphicon glyphicon-{{section.icon}}" aria-hidden="true"></span>{{ section.title }}</label>
-				<ul class="ac-small">
+        <ul class="ac-{{ section.subtitles.size }}">
 				{% for subsection in section.subtitles %}
 				<li><a href="{{ site.baseurl }}{{ subsection.href }}">{{ subsection.title }}</a></li>
 				{% endfor %}

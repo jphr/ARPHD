@@ -15,10 +15,10 @@
     - title: Nous contacter
       href: /contact.html
 
-    - title: Parcours de soin du greffé hépatique à Mondor
+    - title: Parcours de soin à Mondor
       href: /parcours.html
 
-    - title: Ressources multimédiq
+    - title: Ressources multimédia
       href: /resources.html
 
 - id: 4
@@ -46,7 +46,7 @@
       href: /learned_society.html
 
 - id: 3
-  title: Accès infirmier / Éducation thérapeutique
+  title: Éducation thérapeutique
   icon: info-sign
   opened: false
   subtitles:

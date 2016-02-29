@@ -349,7 +349,7 @@ pre
   line-height:130%
 }
 
-#welcome-greeting > h2
+#welcome-greeting > h2, #welcome-greeting > p, #welcome-greeting li
 {
   font-size:2em;
   font-weight:100;
@@ -357,6 +357,11 @@ pre
   padding-top:0;
   line-height:140%;
   text-align: justify;
+}
+
+#welcome-greeting li:before
+{
+  content: " - ";
 }
 
 #welcome-greeting h2 a
