@@ -27,7 +27,13 @@
   opened: false
   subtitles:
     - title: Score aFoetoProteine
-      href: /score.html
+      href: /score_afp.html
+
+    - title: Score MELD
+      href: /score_meld.html
+
+    - title: Score Child Pugh
+      href: /score_child.html
 
 - id: 2
   title: Accès médecin

@@ -1,0 +1,31 @@
+---
+title: Unité de Transplantation Hépatique - Score aFoetoProteines
+---
+<div class="container">
+  <div class="container">
+    <h1>Calculer le score &#945;FoetoProteine</h1>
+    <form name="score" class="score" action="javascript:calculateAFPScore()">
+      <fieldset>
+        <legend for="size">Diamètre maximal</legend>
+        <input type="radio" name="size" value="low"><label><span><span></span></span>&#8804;3</label>
+        <input type="radio" name="size" value="mid"><label><span><span></span></span>6</label>
+        <input type="radio" name="size" value="high"><label><span><span></span></span>&gt;6</label>
+      </fieldset>
+      <fieldset>
+        <legend for="color">Nombre de nodules</legend>
+        <input type="radio" name="number" value="low"><label><span><span></span></span>3</label>
+        <input type="radio" name="number" value="high"><label><span><span></span></span>&#8805;4</label>
+      </fieldset>
+      <fieldset>
+        <legend for="opinion">&#945;FP</legend>
+        <input type="radio" name="protein" value="low"><label><span><span></span></span>&#8804;100</label>
+        <input type="radio" name="protein" value="mid"><label><span><span></span></span>1000</label>
+          <input type="radio" name="protein" value="high"><label><span><span></span></span>&gt;1000</label>
+      </fieldset>
+      <input type="submit" value="Calculer">
+      <p class="score">
+        Score : <span id="result"></span>
+      </p>
+    </form>
+  </div>
+</div>

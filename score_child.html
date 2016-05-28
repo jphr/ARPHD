@@ -1,0 +1,44 @@
+---
+title: Unité de Transplantation Hépatique - Score Child Pugh
+---
+<div class="container">
+  <div class="container">
+    <h1>Calculer le score Child Pugh</h1>
+    <form name="score" class="score" action="javascript:calculateChildScore()">
+      <fieldset>
+        <legend for="size">Encéphalopathie</legend>
+        <input type="radio" name="enc" value="low"><label><span><span></span></span>Absente</label>
+        <input type="radio" name="enc" value="mid"><label><span><span></span></span>Grade I et II</label>
+        <input type="radio" name="enc" value="high"><label><span><span></span></span>Grade III et IV</label>
+      </fieldset>
+      <fieldset>
+        <legend for="color">Ascite</legend>
+        <input type="radio" name="ascite" value="low"><label><span><span></span></span>Absente</label>
+        <input type="radio" name="ascite" value="mid"><label><span><span></span></span>Minime</label>
+        <input type="radio" name="ascite" value="high"><label><span><span></span></span>Modérée</label>
+      </fieldset>
+      <fieldset>
+        <legend for="opinion">Bilirubine totale (&micro;mol/L)</legend>
+        <input type="radio" name="bili" value="low"><label><span><span></span></span>&lt;35</label>
+        <input type="radio" name="bili" value="mid"><label><span><span></span></span>35 à 50</label>
+          <input type="radio" name="bili" value="high"><label><span><span></span></span>&gt;50</label>
+      </fieldset>
+      <fieldset>
+        <legend for="opinion">Albumine (g/L)</legend>
+        <input type="radio" name="albu" value="high"><label><span><span></span></span>&lt;28</label>
+        <input type="radio" name="albu" value="mid"><label><span><span></span></span>28 à 35</label>
+          <input type="radio" name="albu" value="low"><label><span><span></span></span>&gt;35</label>
+      </fieldset>
+      <fieldset>
+        <legend for="opinion">Taux de prothrombine (%)</legend>
+        <input type="radio" name="proth" value="low"><label><span><span></span></span>&lt;40</label>
+        <input type="radio" name="proth" value="mid"><label><span><span></span></span>40 à 50</label>
+          <input type="radio" name="proth" value="high"><label><span><span></span></span>&gt;50</label>
+      </fieldset>
+      <input type="submit" value="Calculer">
+      <p class="score">
+        Score : <span id="result"></span>
+      </p>
+    </form>
+  </div>
+</div>

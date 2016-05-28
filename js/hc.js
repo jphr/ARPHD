@@ -34,7 +34,7 @@ window.onload = function() {
   }
 }
 
-function calculateScore(){
+function calculateAFPScore(){
   var result = document.getElementById('result');
   result.classList.remove('good');
   result.classList.remove('bad');
@@ -61,4 +61,45 @@ function calculateScore(){
 
   result.textContent = score;
   result.classList.add(score <= 2 ? 'good' : 'bad');
+}
+
+function calculateMELDScore(){
+  var result = document.getElementById('result');
+  //result.classList.remove('good');
+  //result.classList.remove('bad');
+  var score = 0;
+  var creat = document.score.creat.value;
+  var bili = document.score.bilirubin.value;
+  var inr = document.score.inr.value;
+
+  score = (0.957 * Math.log(creat) + 0.378 * Math.log(bili) + 1.120 * Math.log(inr) + 0.643 ) * 10;
+
+  result.textContent = score;
+  //result.classList.add(score <= 2 ? 'good' : 'bad');
+}
+
+function calculateChildScore(){
+  var result = document.getElementById('result');
+  var score = 0;
+  var inputs = document.querySelectorAll('.score input[type=radio]:checked');
+  for (var i = 0; i < inputs.length; i++) {
+    switch (inputs[i]){
+      case 'low':
+        score += 1
+      case 'mid':
+        score += 2;
+        break;
+      case 'high':
+        score += 3;
+        break;
+      default:
+    }
+  }
+
+  if(score < 7)
+    result.textContent = 'Classe A';
+  else if(score < 10)
+    result.textContent = 'Classe B';
+  else
+    result.textContent = 'Classe C';
 }

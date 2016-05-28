@@ -84,6 +84,10 @@ li{
   list-style: none;
 }
 
+.bullet{
+  list-style: circle;
+}
+
 /*Result*/
 .good{
   color: green;
@@ -731,9 +735,72 @@ time
   background-color:#2FD0EF
 }
 
-.score {
+form.score {
   font-size: 20px;
+ width:600px;
+ float:left;
+ color:#818181;
+ background: #DDD;
+ border: 2px solid #ccc;
+ padding:10px;
+ font-family: Georgia;
+ font-size: 14px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
 }
+
+form.score legend{
+  text-align:left;
+  color:#666;
+  font-size:18px;
+  margin-left:10px;
+}
+
+form.score input[type=radio]{
+  width     : 2em;
+  margin: 0 0 0 20px;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=radio]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+form.score input[type=radio] + label > span{
+  display          : inline-block;
+  width            : 1em;
+  height           : 1em;
+  margin: 0.25em 0.5em 0.35em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image : linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  vertical-align   : bottom;
+}
+
+input[type=radio]:checked + label > span > span{
+  display          : block;
+  width: 0.7em;
+  height           : 0.65em;
+  margin           : 0.15em;
+  border: 0.0625em solid #2c3e50;
+  border-radius    : 0.125em;
+  background: rgb(0, 163, 217);
+}
+
+form.score input[type="submit"]{
+  margin:35px auto 5px auto;
+  background: linear-gradient(to top, #00A3D9, rgb(38, 152, 219));
+  color: white;
+  vertical-align: bottom;
+  line-height: 1.5em;
+  border-radius: 0.5em;
+  box-shadow: none;
+}
+
 
 #result{
   margin: 5px;
