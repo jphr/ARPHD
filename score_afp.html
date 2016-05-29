@@ -6,21 +6,21 @@ title: Unité de Transplantation Hépatique - Score aFoetoProteines
     <h1>Calculer le score &#945;FoetoProteine</h1>
     <form name="score" class="score" action="javascript:calculateAFPScore()">
       <fieldset>
-        <legend for="size">Diamètre maximal</legend>
-        <input type="radio" name="size" value="low"><label><span><span></span></span>&#8804;3</label>
-        <input type="radio" name="size" value="mid"><label><span><span></span></span>6</label>
-        <input type="radio" name="size" value="high"><label><span><span></span></span>&gt;6</label>
+        <legend for="size">Diamètre maximal (mm)</legend>
+        <input type="radio" name="size" value="low" id="low_size"><label for="low_size"><span><span></span></span>&#8804;30</label>
+        <input type="radio" name="size" value="mid" id='mid_size'><label for="mid_size"><span><span></span></span>31-60</label>
+        <input type="radio" name="size" value="high"id="high_size"><label for="high_size"><span><span></span></span>&gt;60</label>
       </fieldset>
       <fieldset>
         <legend for="color">Nombre de nodules</legend>
-        <input type="radio" name="number" value="low"><label><span><span></span></span>&lt;4</label>
-        <input type="radio" name="number" value="high"><label><span><span></span></span>&#8805;4</label>
+        <input type="radio" name="number" value="low" id="low_number"><label for="low_number"><span><span></span></span>&lt;4</label>
+        <input type="radio" name="number" value="high" id="high_number"><label for="high_number"><span><span></span></span>&#8805;4</label>
       </fieldset>
       <fieldset>
         <legend for="opinion">&#945;FP</legend>
-        <input type="radio" name="protein" value="low"><label><span><span></span></span>&#8804;100</label>
-        <input type="radio" name="protein" value="mid"><label><span><span></span></span>1000</label>
-          <input type="radio" name="protein" value="high"><label><span><span></span></span>&gt;1000</label>
+        <input type="radio" name="protein" value="low" id="low_prot"><label for="low_prot"><span><span></span></span>&#8804;100</label>
+        <input type="radio" name="protein" value="mid" id="mid_prot"><label for="mid_prot"><span><span></span></span>101-1000</label>
+          <input type="radio" name="protein" value="high" id="high_prot"><label for="high_prot"><span><span></span></span>&gt;1000</label>
       </fieldset>
       <input type="submit" value="Calculer">
       <p class="score">
