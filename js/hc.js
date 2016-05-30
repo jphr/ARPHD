@@ -65,17 +65,14 @@ function calculateAFPScore(){
 
 function calculateMELDScore(){
   var result = document.getElementById('result');
-  //result.classList.remove('good');
-  //result.classList.remove('bad');
   var score = 0;
-  var creat = document.score.creat.value;
-  var bili = document.score.bilirubin.value;
-  var inr = document.score.inr.value;
+  var creat = document.score.creat.value.replace(',', '.') / 88.4;
+  var bili = document.score.bilirubin.value.replace(',', '.') / 17.1;
+  var inr = document.score.inr.value.replace(',', '.');
 
   score = (0.957 * Math.log(creat) + 0.378 * Math.log(bili) + 1.120 * Math.log(inr) + 0.643 ) * 10;
 
   result.textContent = score;
-  //result.classList.add(score <= 2 ? 'good' : 'bad');
 }
 
 function calculateChildScore(){
@@ -83,9 +80,10 @@ function calculateChildScore(){
   var score = 0;
   var inputs = document.querySelectorAll('.score input[type=radio]:checked');
   for (var i = 0; i < inputs.length; i++) {
-    switch (inputs[i]){
+    switch (inputs[i].value){
       case 'low':
         score += 1
+        break;
       case 'mid':
         score += 2;
         break;
@@ -97,9 +95,9 @@ function calculateChildScore(){
   }
 
   if(score < 7)
-    result.textContent = 'Classe A';
+    result.textContent = 'Classe A' + score;
   else if(score < 10)
-    result.textContent = 'Classe B';
+    result.textContent = 'Classe B' + score;
   else
-    result.textContent = 'Classe C';
+    result.textContent = 'Classe C' + score;
 }

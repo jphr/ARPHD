@@ -7,33 +7,33 @@ title: Unité de Transplantation Hépatique - Score Child Pugh
     <form name="score" class="score" action="javascript:calculateChildScore()">
       <fieldset>
         <legend for="size">Encéphalopathie</legend>
-        <input type="radio" name="enc" value="low"><label><span><span></span></span>Absente</label>
-        <input type="radio" name="enc" value="mid"><label><span><span></span></span>Grade I et II</label>
-        <input type="radio" name="enc" value="high"><label><span><span></span></span>Grade III et IV</label>
+        <input type="radio" name="enc" value="low" id="low_enc"><label for="low_enc" ><span><span></span></span>Absente</label>
+        <input type="radio" name="enc" value="mid" id="mid_enc"><label for="mid_enc"><span><span></span></span>Grade I et II</label>
+        <input type="radio" name="enc" value="high" id="high_enc"><label for="high_enc"><span><span></span></span>Grade III et IV</label>
       </fieldset>
       <fieldset>
         <legend for="color">Ascite</legend>
-        <input type="radio" name="ascite" value="low"><label><span><span></span></span>Absente</label>
-        <input type="radio" name="ascite" value="mid"><label><span><span></span></span>Minime</label>
-        <input type="radio" name="ascite" value="high"><label><span><span></span></span>Modérée</label>
+        <input type="radio" name="ascite" value="low" id="low_ascite"><label for="low_ascite"><span><span></span></span>Absente</label>
+        <input type="radio" name="ascite" value="mid" id="mid_ascite"><label for="mid_ascite"><span><span></span></span>Minime</label>
+        <input type="radio" name="ascite" value="high" id="high_ascite"><label for="high_ascite"><span><span></span></span>Modérée</label>
       </fieldset>
       <fieldset>
         <legend for="opinion">Bilirubine totale (&micro;mol/L)</legend>
-        <input type="radio" name="bili" value="low"><label><span><span></span></span>&lt;35</label>
-        <input type="radio" name="bili" value="mid"><label><span><span></span></span>35 à 50</label>
-          <input type="radio" name="bili" value="high"><label><span><span></span></span>&gt;50</label>
+        <input type="radio" name="bili" value="low" id="low_bili"><label for="low_bili"><span><span></span></span>&lt;35</label>
+        <input type="radio" name="bili" value="mid" id="mid_bili"><label for="mid_bili"><span><span></span></span>35 à 50</label>
+          <input type="radio" name="bili" value="high" id="high_bili"><label for="high_bili"><span><span></span></span>&gt;50</label>
       </fieldset>
       <fieldset>
         <legend for="opinion">Albumine (g/L)</legend>
-        <input type="radio" name="albu" value="high"><label><span><span></span></span>&lt;28</label>
-        <input type="radio" name="albu" value="mid"><label><span><span></span></span>28 à 35</label>
-          <input type="radio" name="albu" value="low"><label><span><span></span></span>&gt;35</label>
+        <input type="radio" name="albu" value="high" id="high_albu"><label for="high_albu"><span><span></span></span>&lt;28</label>
+        <input type="radio" name="albu" value="mid" id="mid_albu"><label for="mid_albu"><span><span></span></span>28 à 35</label>
+          <input type="radio" name="albu" value="low" id="low_albu"><label for="low_albu"><span><span></span></span>&gt;35</label>
       </fieldset>
       <fieldset>
         <legend for="opinion">Taux de prothrombine (%)</legend>
-        <input type="radio" name="proth" value="low"><label><span><span></span></span>&lt;40</label>
-        <input type="radio" name="proth" value="mid"><label><span><span></span></span>40 à 50</label>
-          <input type="radio" name="proth" value="high"><label><span><span></span></span>&gt;50</label>
+        <input type="radio" name="proth" value="low" id="low_proth"><label for="low_proth"><span><span></span></span>&lt;40</label>
+        <input type="radio" name="proth" value="mid" id="mid_proth"><label for="mid_proth"><span><span></span></span>40 à 50</label>
+          <input type="radio" name="proth" value="high" id="high_proth"><label for="high_proth"><span><span></span></span>&gt;50</label>
       </fieldset>
       <input type="submit" value="Calculer">
       <p class="score">
