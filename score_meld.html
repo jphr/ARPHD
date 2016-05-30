@@ -1,14 +1,14 @@
 ---
 title: Unité de Transplantation Hépatique - Score MELD
 ---
-<div class="container">
+<div class="container scoreform">
   <div class="container">
     <h1>Calculer le score MELD</h1>
     <form name="score" class="score" action="javascript:calculateMELDScore()">
       <fieldset>
         <legend for="size">Serum Creatinine</legend>
         <input type="text" name="creat"><label for="creat">&micro;mol/dl</label>
-      </fieldset>
+        </fieldset>
       <fieldset>
         <legend for="color">Serum Bilirubine</legend>
         <input type="text" name="bilirubin"><label for="bilirubin">&micro;mol/dl</label>
@@ -18,9 +18,10 @@ title: Unité de Transplantation Hépatique - Score MELD
         <input type="text" name="inr">
       </fieldset>
       <input type="submit" value="Calculer">
-    <p class="score">
-      Score : <span id="result"></span>
-    </p>
     </form>
+    <div class="score">
+    Score
+    <div id="result"></div>
+    </div>
   </div>
 </div>

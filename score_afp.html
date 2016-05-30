@@ -1,7 +1,7 @@
 ---
 title: Unité de Transplantation Hépatique - Score aFoetoProteines
 ---
-<div class="container">
+<div class="container scoreform">
   <div class="container">
     <h1>Calculer le score &#945;FoetoProteine</h1>
     <form name="score" class="score" action="javascript:calculateAFPScore()">
@@ -23,9 +23,10 @@ title: Unité de Transplantation Hépatique - Score aFoetoProteines
           <input type="radio" name="protein" value="high" id="high_prot"><label for="high_prot"><span><span></span></span>&gt;1000</label>
       </fieldset>
       <input type="submit" value="Calculer">
-      <p class="score">
-        Score : <span id="result"></span>
-      </p>
     </form>
+    <div class="score">
+    Score
+    <div id="result"></div>
+    </div>
   </div>
 </div>

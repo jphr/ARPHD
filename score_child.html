@@ -1,7 +1,7 @@
 ---
 title: Unité de Transplantation Hépatique - Score Child Pugh
 ---
-<div class="container">
+<div class="container scoreform">
   <div class="container">
     <h1>Calculer le score Child Pugh</h1>
     <form name="score" class="score" action="javascript:calculateChildScore()">
@@ -36,9 +36,10 @@ title: Unité de Transplantation Hépatique - Score Child Pugh
           <input type="radio" name="proth" value="high" id="high_proth"><label for="high_proth"><span><span></span></span>&gt;50</label>
       </fieldset>
       <input type="submit" value="Calculer">
-      <p class="score">
-        Score : <span id="result"></span>
-      </p>
     </form>
+    <div class="score">
+    Score
+    <div id="result"></div>
+    </div>
   </div>
 </div>
