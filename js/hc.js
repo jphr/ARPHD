@@ -34,6 +34,11 @@ window.onload = function() {
   }
 }
 
+function trimNumber(num, digitAfterComma){
+  var mult = Math.pow(10, digitAfterComma);
+  return Math.round(num * mult) / mult;
+}
+
 function calculateAFPScore(){
   var result = document.getElementById('result');
   result.classList.remove('good');
@@ -69,10 +74,12 @@ function calculateMELDScore(){
   var creat = document.score.creat.value.replace(',', '.') / 88.4;
   var bili = document.score.bilirubin.value.replace(',', '.') / 17.1;
   var inr = document.score.inr.value.replace(',', '.');
+  if(document.score.dial.checked) creat = 4;
+
 
   score = (0.957 * Math.log(creat) + 0.378 * Math.log(bili) + 1.120 * Math.log(inr) + 0.643 ) * 10;
 
-  result.textContent = score;
+  result.textContent = trimNumber(score, 2);
 }
 
 function calculateChildScore(){
@@ -100,4 +107,20 @@ function calculateChildScore(){
     result.textContent = 'Classe B' + score;
   else
     result.textContent = 'Classe C' + score;
+}
+
+function calculateLilleScore(){
+  var result = document.getElementById('result');
+  var score = 0;
+  var creat = document.score.creatine.value.replace(',', '.');
+  var albu = document.score.albumine.value.replace(',', '.');
+  var bili = document.score.bilirubin.value.replace(',', '.');
+  var bili7 = document.score.bilirubin7.value.replace(',', '.');
+  var pt = document.score.pt.value.replace(',', '.');
+  var age = document.score.age.value;
+
+  var r = 3.19 - 0.101 * age + 0.147 * albu + 0.0165 * bili7 - 0.206 * creat - 0.0065 * bili - 0.0096 * pt;
+  score = Math.exp(-r) / (1 + Math.exp(-r));
+
+  result.textContent = trimNumber(score, 3);
 }

@@ -15,7 +15,7 @@
     - title: Nous contacter
       href: /contact.html
 
-    - title: Parcours de soins à Mondor
+    - title: Parcours de soins
       href: /parcours.html
 
     - title: Ressources multimédia
@@ -27,13 +27,16 @@
   opened: false
   subtitles:
     - title: Score aFoetoProteine
-      href: /score_afp.html
+      href: /scores/score_afp.html
 
     - title: Score MELD
-      href: /score_meld.html
+      href: /scores/score_meld.html
 
     - title: Score Child Pugh
-      href: /score_child.html
+      href: /scores/score_child.html
+
+    - title: Score Lille
+      href: /scores/score_lille.html
 
 - id: 2
   title: Accès médecin
@@ -53,7 +56,7 @@
       href: /learned_society.html
 
 - id: 3
-  title: Éducation thérapeutique
+  title: Espace patient
   icon: info-sign
   opened: false
   subtitles:
