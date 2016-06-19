@@ -1,0 +1,35 @@
+---
+title: Unité de Transplantation Hépatique - Hôpital Henri Mondor Créteil
+---
+<div class="project-container">
+  <h1>Notre équipe</h1>
+</div>
+
+<div class="row">
+  <ul class="lb-album">
+    {% for member in site.data.members %}
+    <li>
+      <a href="#image-{{ forloop.index }}">
+        <img src="images/{{member.photo}}" alt="{{ member.name }}">
+        <span>{{ member.name }}</span>
+      </a>
+      <div class="lb-overlay" id="image-{{ forloop.index }}">
+        <img src="images/{{ member.photo }}" alt="{{ member.name }}" />
+        <div>
+          <h3>{{member.name}}</h3>
+          <p>{{member.bio}}</p>
+          {% if forloop.first == false %}
+          {% assign prec = forloop.index | minus: 1 %}
+          <a href="#image-{{ prec }}" class="lb-prev">Prec</a>
+          {% endif %}
+          {% if forloop.last == false %}
+          {% assign suiv = forloop.index | plus: 1 %}
+          <a href="#image-{{ suiv }}" class="lb-next">Suiv</a>
+          {% endif %}
+        </div>
+        <a href="#page" class="lb-close">X Fermer</a>
+      </div>
+    </li>
+    <li>
+      {% endfor %}
+  </ul>

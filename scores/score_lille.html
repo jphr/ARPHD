@@ -1,0 +1,39 @@
+---
+title: Unité de Transplantation Hépatique - Score Lille
+---
+<div class="container scoreform">
+  <div class="container">
+    <h1>Calculer le score Lille</h1>
+    <form name="score" class="score" action="javascript:calculateLilleScore()">
+      <fieldset>
+        <legend>Age du patient</legend>
+        <input type="number" name="age"><label for="age">ans</label>
+      </fieldset>
+      <fieldset>
+        <legend>Bilirubine à J-0</legend>
+        <input type="text" name="bilirubin"><label for="bilirubin">&micro;mol/L</label>
+      </fieldset>
+      <fieldset>
+        <legend>Bilirubine à J+7</legend>
+        <input type="text" name="bilirubin7"><label for="bilirubin7">&micro;mol/L</label>
+      </fieldset>
+      <fieldset>
+        <legend>Creatine à J-0</legend>
+        <input type="text" name="creatine"><label for="creatine">&micro;mol/L</label>
+      </fieldset>
+      <fieldset>
+        <legend>Albumine à J-0</legend>
+        <input type="text" name="albumine"><label for="albumine">g/L</label>
+      </fieldset>
+      <fieldset>
+        <legend>Taux de prothrombine à J-0</legend>
+        <input type="text" name="pt"><label for="pt">sec</label>
+      </fieldset>
+      <input type="submit" value="Calculer">
+    </form>
+    <div class="score">
+    Score
+    <div id="result"></div>
+    </div>
+  </div>
+</div>

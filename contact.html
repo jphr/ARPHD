@@ -1,39 +1,17 @@
 ---
-title: Unité de Transplantation Hépatique - Hôpital Henri Mondor Créteil
+title: Unité de Transplantation Hépatique - Nous contacter
 ---
-<div class="container">
-  <div class="project-container">
-    <h1>Notre équipe</h1>
-  </div>
-
-  <div class="container">
-    <div class="row">
-    <ul class="lb-album">
-      {% for member in site.data.members %}
-      <li>
-      <a href="#image-{{ forloop.index }}">
-          <img src="images/{{member.photo}}" alt="{{ member.name }}">
-          <span>{{ member.name }}</span>
-        </a>
-        <div class="lb-overlay" id="image-{{ forloop.index }}">
-          <img src="images/{{ member.photo }}" alt="{{ member.name }}" />
-          <div>
-            <h3>{{member.name}}</h3>
-            <p>{{member.bio}}</p>
-            {% if forloop.first == false %}
-            {% assign prec = forloop.index | minus: 1 %}
-              <a href="#image-{{ prec }}" class="lb-prev">Prec</a>
-            {% endif %}
-            {% if forloop.last == false %}
-            {% assign suiv = forloop.index | plus: 1 %}
-              <a href="#image-{{ suiv }}" class="lb-next">Suiv</a>
-            {% endif %}
-            </div>
-            <a href="#page" class="lb-close">X Fermer</a>
-          </div>
-        </li>
-      <li>
-      {% endfor %}
-      </ul>
-  </div>
-</div>
+<h1>Comment nous contacter ?</h1>
+{% for contact in site.data.contacts %}
+  <h2>{{contact.name}} :</h2>
+  <p><span class="glyphicon glyphicon-earphone"></span>{{contact.tel}}</p>
+  {% if contact.fax %}
+    <p><span class="glyphicon glyphicon-print"></span>{{contact.fax}}</p>
+  {% endif %}
+  {% if contact.email %}
+    <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:{{contact.email}}">{{contact.email}}</a></p>
+  {% endif %}
+  {% if contact.email2 %}
+    <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:{{contact.email2}}">{{contact.email2}}</a></p>
+  {% endif %}
+{% endfor %}

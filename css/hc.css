@@ -26,18 +26,42 @@ body
 h1,h2,h3,h4,h5,h6
 {
   font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
-  color:#00A3D9
+  color:#00A3D9;
 }
 
 h1
 {
   font-weight:500;
-  color:#6d7680
+  color:#35afe3;
+	margin: 1em 0 0.75em;
+	padding: 0 0 5px 0;
+	/*!  */
+	position: relative;
+	text-shadow: 0 2px 0 rgba(155, 153, 153, 0.5);
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.container > h1:after{
+  	position: absolute;
+	content: "";
+	height: 1px;
+	border-radius: 2px;
+	left: 0;
+	bottom: 0;
+	box-shadow: 
+		0 -1px 0 rgba(0,0,0,0.1), 0 1px 0 rgba(255,255,255,0.6);
+  	width: 100%;
 }
 
 h2,h3
 {
-  font-weight:700
+  font-size: 23px;
+  text-decoration: underline;
+}
+
+.sidebar-brand h2, .sidebar-brand h3{
+  text-decoration: none;
 }
 
 h1 a,h2 a,h3 a,h4 a
@@ -66,6 +90,7 @@ fieldset{
 
 input{
   vertical-align: middle;
+  margin-bottom: 1.5em;
 }
 
 input[type="submit"]{
@@ -84,6 +109,11 @@ li{
 
 .bullet{
   list-style: circle;
+}
+
+p > .glyphicon{
+  color: #00A3D9;
+  margin: 0 8px;
 }
 
 /*Result*/

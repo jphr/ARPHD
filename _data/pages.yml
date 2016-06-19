@@ -4,7 +4,7 @@
   opened: true
   subtitles:
     - title: Présentation de l'équipe
-      href: /contact.html
+      href: /equipe.html
 
     - title: Actualités
       href: /blog.html
@@ -64,7 +64,7 @@
       href: /faq.html
 
     - title: Livret thérapeutique
-      href: /guide.html
+      href: /livret.pdf
 
     - title: Indications de la transplantation
       href: /parcours.html
