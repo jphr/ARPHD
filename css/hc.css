@@ -113,6 +113,10 @@ li{
   list-style: circle;
 }
 
+.row li{
+  list-style: none;
+}
+
 p > .glyphicon{
   color: #00A3D9;
   margin: 0 8px;

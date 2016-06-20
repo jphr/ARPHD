@@ -119,8 +119,10 @@ function calculateLilleScore(){
   var pt = document.score.pt.value.replace(',', '.');
   var age = document.score.age.value;
 
-  var r = 3.19 - 0.101 * age + 0.147 * albu + 0.0165 * bili7 - 0.206 * creat - 0.0065 * bili - 0.0096 * pt;
-  score = Math.exp(-r) / (1 + Math.exp(-r));
+  creat = creat < 115 ? 0 : 1; 
 
-  result.textContent = trimNumber(score, 3);
+  var r = 3.19 - 0.101 * age + 0.147 * albu + 0.0165 * bili7 - 0.206 * creat - 0.0065 * bili - 0.0096 * pt;
+  //score = Math.exp(-r) / (1 + Math.exp(-r));
+
+  result.textContent = trimNumber(r, 3);
 }
