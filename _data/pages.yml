@@ -9,8 +9,8 @@
     - title: Actualités
       href: /blog.html
 
-    - title: Partenaires
-      href: /partenaires.html
+  #  - title: Partenaires
+  #    href: /partenaires.html
 
     - title: Nous contacter
       href: /contact.html
@@ -18,8 +18,8 @@
     - title: Parcours de soins
       href: /parcours.html
 
-    - title: Ressources multimédia
-      href: /resources.html
+  #  - title: Ressources multimédia
+  #    href: /resources.html
 
 - id: 4
   title: Scores prédicitifs
@@ -46,14 +46,14 @@
     - title: Thématiques de recherches
       href: /publications.html
 
-    - title: Données sur la greffe
-      href: /transplant_data.html
+  #  - title: Données sur la greffe
+  #    href: /transplant_data.html
 
-    - title: Actualité du congrès
-      href: /events.html
+  #  - title: Actualité du congrès
+  #    href: /events.html
 
-    - title: Sociétés savantes
-      href: /learned_society.html
+  #  - title: Sociétés savantes
+  #    href: /learned_society.html
 
 - id: 3
   title: Espace patient
@@ -69,8 +69,8 @@
     - title: Indications de la transplantation
       href: /indications-greffe.html
       
-    - title: Outils
-      href: /tools.html
+  #  - title: Outils
+  #    href: /tools.html
 
 - id: 5
   title: Les associations
@@ -78,7 +78,7 @@
   opened: false
   subtitles:
     - title: Henri Mondor ARPHD
-      href: /arphd.html
+      href: http://chu-mondor.aphp.fr/
    
-    - title: TransHepat
-      href: /transhepat.html
+    - title: TransHépate
+      href: http://www.transhepate.org/

@@ -36,7 +36,11 @@
         <label for="{{section.id}}"><span class="glyphicon glyphicon-{{section.icon}}" aria-hidden="true"></span>{{ section.title }}</label>
         <ul class="ac-{{ section.subtitles.size }}">
 				{% for subsection in section.subtitles %}
+        {% if subsection.href contains "http" %}
+				<li><a href="{{ subsection.href }}" target="_blank">{{ subsection.title }}</a></li>
+        {% else %}
 				<li><a href="{{ site.baseurl }}{{ subsection.href }}">{{ subsection.title }}</a></li>
+        {% endif %}
 				{% endfor %}
 				</ul>
 			{% endfor %}    <hr />
