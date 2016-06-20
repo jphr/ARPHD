@@ -5,9 +5,11 @@ title: Unité de Transplantation Hépatique - Hôpital Henri Mondor Créteil
   <h1>Notre équipe</h1>
 </div>
 
+{% for title in site.data.members %}
+<h3>{{title.title}}</h3>
 <div class="row">
   <ul class="lb-album">
-    {% for member in site.data.members %}
+    {% for member in title.members %}
     <li>
       <a href="#image-{{ forloop.index }}">
         <img src="images/{{member.photo}}" alt="{{ member.name }}">
@@ -33,3 +35,5 @@ title: Unité de Transplantation Hépatique - Hôpital Henri Mondor Créteil
     <li>
       {% endfor %}
   </ul>
+  </div>
+{% endfor %}

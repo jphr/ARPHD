@@ -79,6 +79,11 @@ function calculateMELDScore(){
 
   score = (0.957 * Math.log(creat) + 0.378 * Math.log(bili) + 1.120 * Math.log(inr) + 0.643 ) * 10;
 
+  if(score < 6)
+    score = 6;
+  else if(score > 40)
+    score = 40;
+
   result.textContent = trimNumber(score, 2);
 }
 
