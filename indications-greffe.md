@@ -17,7 +17,7 @@ La gravité de la maladie peut être chiffrée objectivement par des scores comb
 Beaucoup plus rares, les hépatites aiguës gravissimes (hépatites fulminantes), au cours desquelles le pronostic vital peut être engagé en quelques jours, sont également un motif de transplantation.
 
 ## Indication de transplantation pour cirrhose alcoolique
-La cirrhose alcoolique est l’indication de greffe la plus fréquente en France.
+La cirrhose alcoolique est l’indication de greffe la plus fréquente en France, mais ne représente que 25% des transplantations.
 Comme pour toutes les cirrhoses, c’est la survenue et/ou la répétition de complications graves qui font envisager l’intervention. 
 Une prise en charge conjointe de la maladie alcoolique est cependant une étape préliminaire indispensable. En effet, le remplacement de l’organe malade n’est pas un traitement de la conduite addictive ; par ailleurs la poursuite ou la récidive de la consommation d’alcool après la greffe s’accompagne de résultats catastrophiques avec notamment un risque  accru de rejet ou de cancer. 
  L’évaluation addictologique fait donc partie intégrante du bilan pré-opératoire et repose sur :

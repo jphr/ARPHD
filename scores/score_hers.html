@@ -1,0 +1,38 @@
+---
+title: Unité de Transplantation Hépatique - HCC Explant Recurrence Score
+---
+<div class="container scoreform">
+  <div class="container">
+    <h1>HCC Explant Recurrence Score</h1>
+    <form name="score" class="score" action="javascript:calculateHERSScore()">
+      <fieldset>
+        <legend for="color">Nombre de nodules</legend>
+        <input type="radio" name="number" value="low" id="low_number"><label for="low_number"><span><span></span></span>1-3</label>
+        <input type="radio" name="number" value="mid" id="mid_number"><label for="mid_number"><span><span></span></span>4</label>
+        <input type="radio" name="number" value="high" id="high_number"><label for="high_number"><span><span></span></span>&gte;5</label>
+      </fieldset>
+      <fieldset>
+        <legend for="size">Diamètre maximal du plus gros nodule (mm)</legend>
+        <input type="radio" name="size" value="low" id="low_size"><label for="low_size"><span><span></span></span>&#8804;30</label>
+        <input type="radio" name="size" value="mid" id='mid_size'><label for="mid_size"><span><span></span></span>31-60</label>
+        <input type="radio" name="size" value="high"id="high_size"><label for="high_size"><span><span></span></span>&gt;60</label>
+      </fieldset>
+      <fieldset>
+        <legend for="tumor">Extension tumorale</legend>
+        <input type="radio" name="tumor" value="uni" id="uni_tumor"><label for="uni_tumor"><span><span></span></span>Unilobaire</label>
+        <input type="radio" name="tumor" value="bi" id="bi_tumor"><label for="bi_tumor"><span><span></span></span>Bilobaire</label>
+      </fieldset>
+      <fieldset>
+	<legend for="invasion">Invasion microvasculaire</legend>
+        <input type="radio" name="invasion" value="no_invasion" id="no_invasion"><label for="no_invasion"><span><span></span></span>Non</label>
+        <input type="radio" name="invasion" value="invasion" id="invasion"><label for="invasion"><span><span></span></span>Oui</label>
+      <input type="submit" value="Calculer">
+     </fieldset>
+    </form>
+    <div class="score">
+    Probabilite de recidive a 1, 3, 5 ans
+    <div id="result"></div>
+    </div>
+<p>Reference Costentin C. et al, 2016</p>
+  </div>
+</div>

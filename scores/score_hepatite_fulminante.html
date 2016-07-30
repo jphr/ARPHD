@@ -1,0 +1,64 @@
+---
+title: Unité de Transplantation Hépatique - Score Hépatite fulminante
+---
+<div class="container scoreform">
+  <div class="container">
+    <h1>Score Hépatite fulminante</h1>
+    <form name="score" class="score" action="javascript:calculateHFScore()">
+      <fieldset>
+        <legend>Age</legend>
+        <input type="number" id="age"><label for="age">ans</label>
+      </fieldset>
+      <fieldset>
+	<legend>Etiologie</legend>
+        <input type="radio" name="etio" value="paracetamol" id="paracetamol_etio"><label for="paracetamol_etio"><span><span></span></span>Paracetamol</label>
+        <input type="radio" name="etio" value="medoc" id="medoc_etio"><label for="medoc_etio" ><span><span></span></span>Médicament hors paracetamol</label>
+        <input type="radio" name="etio" value="other" id="other_etio"><label for="other_etio"><span><span></span></span>Autre</label>
+        <input type="radio" name="etio" value="unknown" id="unknown_etio"><label for="unknown_etio"><span><span></span></span>Indeterminé</label>
+      </fieldset>
+      <fieldset>
+        <legend>Confusion ou coma</legend>
+        <input type="radio" name="coma" value="non" id="non_coma"><label for="non_coma"><span><span></span></span>Non</label>
+        <input type="radio" name="coma" value="oui" id="oui_coma"><label for="oui_coma"><span><span></span></span>Oui</label>
+      </fieldset>
+      <fieldset>
+        <legend>Délai ictère-encéphalopathie</legend>
+        <input type="radio" name="delai" value="low" id="low_delai"><label for="low_delai"><span><span></span></span>&lte;7 jours</label>
+        <input type="radio" name="delai" value="mid" id="mid_delai"><label for="mid_delai"><span><span></span></span>&gt; 7 jours</label>
+      </fieldset>
+      <fieldset>
+        <legend>INR</legend>
+        <input type="text" name="inr" id="inr">
+      </fieldset>
+      <fieldset>
+        <legend>Facteur V</legend>
+        <input type="text" name="facteur" id="facteur"><label for="facteur">%</label>
+      </fieldset>
+      <fieldset>
+        <legend>Bilirubine</legend>
+        <input type="text" name="bili" id="bili"><label for="bili">micromol/L</label>
+      </fieldset>
+      <fieldset>
+        <legend>Créatinine</legend>
+        <input type="text" name="creat" id="creat"><label for="creat">micromol/L</label>
+      </fieldset>
+      <fieldset>
+        <legend>PH artériel</legend>
+        <input type="text" name="ph" id="ph">
+      </fieldset>
+      <fieldset>
+        <legend>Lactate artériel</legend>
+        <input type="text" name="lactate" id="lactate"><label for="lactate">mmol/L</label>
+      </fieldset>
+      <input type="submit" value="Calculer">
+    </form>
+    <div class="score">
+    Selon Clichy-Beaujon
+    <div id="result_clichy"></div>
+    </div>
+    <div class="score">
+    Selon King's College
+    <div id="result_kings"></div>
+    </div>
+  </div>
+</div>

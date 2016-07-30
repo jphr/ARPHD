@@ -9,12 +9,12 @@ Le régime sans sel est une prescription médicale . Il vise à limiter la forma
 
 ### Est-ce que c’est grave si je mange du pain salé avec de la charcuterie ? du pain salé
 
-### Pourquoi suis-je essoufflé?
+### Pourquoi suis-je essoufflé(e)?
 L'ascite présente dans l'abdomen peut diffuser autour des poumons, elle s'appelle alors "ascite pleurale". Elle peut comprimer le diaphragme et empècher son expansion
 Y-a-t-il un risque d’Infection du liquide d'ascite:
 L'ascite est un liquide qui peut s'infecter spontanément. Toute infection du liquide d'ascite nécessite le recours à un traitement antibiotique. Dans certains cas un traitement antibiotique préventif de l’infection peut être débuté sur décision médicale.
 
-### Pourquoi dois-je arréter de fumer?
+### Pourquoi dois-je arrêter de fumer?
 Parce que le tabac expose à la survenue de cancers notamment de la sphère ORL, pulmonaires ou bronchiques et augmente les risques de complications infectieuses  dans  la période post greffe. La mise systématique sous traitements immunosuppresseurs dès l'intervention chirurgicale multiplie ces risques.
 
 ### Pourquoi dois-arréter toute consommation d'alcool?

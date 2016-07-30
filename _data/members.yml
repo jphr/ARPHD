@@ -1,3 +1,21 @@
+- title: Coordination de transplantation
+  members:
+    - name: Elise Goyon
+      bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
+      photo: elise-goyon.jpg
+
+    - name: Elisabeth Martin
+      bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
+      photo: profile-placeholder.png
+
+    - name: Nadia Chabou
+      bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
+      photo: profile-placeholder.png
+
+    - name: Norbert Ngongang
+      bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
+      photo: norbert-ngongang.jpg
+
 - title: Hépatologues
   members:
     - name: Christophe Duvoux
@@ -18,7 +36,7 @@
 
     - name: Cyrille Feray
       bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
-      photo: profile-placeholder.png
+      photo: cyrille-feray.jpg
 
     - name: Giuliana Amaddeo
       bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
@@ -44,13 +62,13 @@
 
     - name: Alexis Laurent
       bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
-      photo: profile-placeholder.png
+      photo: alexis-laurent.jpg
 
     - name: Chady Salloum
       bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
       photo: profile-placeholder.png
 
-- title: Réanimateurs Anésthésistes
+- title: Anesthésistes Réanimateurs
   members:
     - name: Jean-Claude Merle
       bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
@@ -73,23 +91,5 @@
       photo: profile-placeholder.png
 
     - name: Marianne Cojocaru
-      bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
-      photo: profile-placeholder.png
-
-- title: Coordination
-  members:
-    - name: Elise Goyon
-      bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
-      photo: profile-placeholder.png
-
-    - name: Elisabeth Martin
-      bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
-      photo: profile-placeholder.png
-
-    - name: Nadia Chabou
-      bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
-      photo: profile-placeholder.png
-
-    - name: Norbert Ngongang
       bio: Professeur en transplantation hépatique au CHU Henri Mondor de Créteil
       photo: profile-placeholder.png

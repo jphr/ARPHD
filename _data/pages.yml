@@ -15,51 +15,17 @@
     - title: Nous contacter
       href: /contact.html
 
-    - title: Parcours de soins
-      href: /parcours.html
-
   #  - title: Ressources multimédia
   #    href: /resources.html
-
-- id: 4
-  title: Scores prédicitifs
-  icon: scale
-  opened: false
-  subtitles:
-    - title: Score aFoetoProteine
-      href: /scores/score_afp.html
-
-    - title: Score MELD
-      href: /scores/score_meld.html
-
-    - title: Score Child Pugh
-      href: /scores/score_child.html
-
-    - title: Score Lille
-      href: /scores/score_lille.html
-
-- id: 2
-  title: Accès médecin
-  icon: plus
-  opened: false
-  subtitles:
-    - title: Thématiques de recherches
-      href: /publications.html
-
-  #  - title: Données sur la greffe
-  #    href: /transplant_data.html
-
-  #  - title: Actualité du congrès
-  #    href: /events.html
-
-  #  - title: Sociétés savantes
-  #    href: /learned_society.html
 
 - id: 3
   title: Espace patient
   icon: info-sign
   opened: false
   subtitles:
+    - title: Parcours de soins à H. Mondor
+      href: /parcours.html
+
     - title: Questions fréquentes
       href: /faq.html
 
@@ -82,3 +48,52 @@
    
     - title: TransHépate
       href: http://www.transhepate.org/
+
+- id: 2
+  title: Accès médecin
+  icon: plus
+  opened: false
+  subtitles:
+    - title: Thématiques de recherches
+      href: /publications.html
+
+  #  - title: Données sur la greffe
+  #    href: /transplant_data.html
+
+  #  - title: Actualité du congrès
+  #    href: /events.html
+
+  #  - title: Sociétés savantes
+  #    href: /learned_society.html
+
+- id: 4
+  title: Scores utiles en transplantation hépatique
+  icon: scale
+  opened: false
+  subtitles:
+    - title: Score MELD
+      href: /scores/score_meld.html
+
+    - title: Score de Child Pugh
+      href: /scores/score_child.html
+
+    - title: Score aFoetoProteine
+      href: /scores/score_afp.html
+
+    - title: Score HERS
+      href: /scores/score_hers.html
+
+    - title: Score de Lille
+      href: /scores/score_lille.html
+
+    - title: Score Fulminante
+      href: /scores/score_hepatite_fulminante.html
+
+  #  - title: Score CLIF-SOFA
+  #    href: /scores/score_clif-sofa.html
+
+  #  - title: Score Mayo Clinic CBP
+  #    href: /scores/score_cbp.html
+
+  #  - title: Score Mayo Clinic CSP
+  #    href: /scores/score_csp.html

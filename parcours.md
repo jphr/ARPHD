@@ -2,7 +2,7 @@
 title: Unité de Transplantation Hépatique - Parcours de transplantation hépatique à Henri Mondor
 permalink: /parcours
 ---
-# Le bilan pre greffe
+# Le bilan pré greffe
 
 Le projet de greffe hépatique vous a été proposé par un des médecins de l'équipe de transplantation de l'hopital Henri Mondor. Celui ci vous a orienté vers le service de corrdination infirmière afin de l'organiser.
 
@@ -59,6 +59,7 @@ Pour vous aider dans cette démarche de sevrage, un suivi addictologique vous se
 * dosage sanguin de marqueurs tumoraux 
 pourront ètre prescrits en complément.
 
+## Consultation de fin de bilan pré greffe
 Ce bilan se termine par une consultation avec un chirurgien hépatique, un anesthésiste et l'hépatologue référent.
 L'inscription sur liste nationale d'attente de greffe hépatique auprès de l'Agence de Biomédecine par l'infirmière coordinatrice signe la fin de votre bilan pré greffe
 
