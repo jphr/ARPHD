@@ -128,7 +128,7 @@ Un proche peut vous accompagner et rester auprès de vous dans la chambre jusqu�
 Pendant le bilan pré greffe, l’infirmière coordinatrice vous remettra un document d’information concernant le départ pour la greffe ainsi que tous les numéros de téléphone dont vous ou vos proches aurez besoins
 L’infirmière qui vous contacte lors de l’appel à la greffe vous donnera toutes les explications concernant les modalités de votre admission à l’hopital que ce soit de jour ou de nuit.
 
-##Votre arrivée dans le service de chirurgie viscérale
+## Votre arrivée dans le service de chirurgie viscérale
 
 A votre arrivée, vous serez accueilli par une infirmière de chirurgie, un bilan pré opératoire vous sera fait (prélèvement sanguin et urinaire, radiographie des poumons et électrocardiogramme) et vous verrez un anesthésiste et le chirurgien transplanteur
 Si le bilan préopératoire est normal et si le greffon prélevé est jugé de bonne qualité, vous serez préparé pour l’intervention.
