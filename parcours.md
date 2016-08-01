@@ -65,15 +65,12 @@ L'inscription sur liste nationale d'attente de greffe hépatique auprès de l'Ag
 
 # La phase d'attente
 
-
 ## L'inscription
 Les examens réalisés lors de votre bilan pré greffe n’ont pas révélé de contre indication formelle à la transplantation hépatique, l’infirmière coordinatrice va pouvoir procéder à votre inscription sur la liste nationale d’attente auprès de l’Agence de Biomédecine, après la validation de votre dossier par votre hépatologue référent, un anesthésiste et un chirurgien transplanteur.
 
 Cette inscription nécessite votre consentement, c’est pourquoi l’infirmière coordinatrice recueillera votre signature ainsi que les photocopies de vos documents d’identité et de prise en charge sociale.
 
 Le score MELD calculé à partir de  données biologiques  (prise de sang) déterminera votre position sur la liste d’attente. En effet ce score permet de faire connaitre à l’Agence de Biomédecine le degré d’urgence de la transplantation hépatique.
-
-
 
 ## L'attente
 La durée d’attente sur liste est variable selon l’origine et la gravité de votre maladie de foie. Elle peut aller de quelque jours à plus d’un an, d’où l’importance de nous informer régulièrement de l’évolution de votre état de santé (amélioration ou dégradation) pour que nous puissions actualiser en temps réel votre position sur la liste d’attente en renseignant au minimum tous les 3 mois les résultats de bilans sanguins auprès de l’Agence de Biomédecine.
@@ -86,14 +83,11 @@ La cirrhose du foie entraine au fil des années un état de dénutrition sévèr
 *	D’avoir des apports suffisants en proteines apportés par les viandes, les poissons et les œufs,
 *	Si nécessaire, de fractionner votre alimentation en plusieurs petits repas par jour dans le cas d’une ascite abondante ou de manque d’appetit par exemple.
 
-
 Une  évaluation continue de votre état nutritionnel sera assurée par une diététicienne tout au long de la phase d’attente.
-
 
 Votre inscription sur liste d’attente va entrainer quelques contraintes dans votre quotidien :
 
 Vous devrez prévenir l’infirmière coordinatrice :
-
 *	En cas de changement de numéro de téléphone (fixe et mobile) et de votre adresse pour que l’on puisse vous contacter rapidement en cas d’appel à la greffe par exemple,
 *	En cas d’éloignement de plus de trois heures (par route) du centre de transplantation dont vous dépendez,
 *	En cas d’hospitalisation dans une autre structure,
@@ -115,8 +109,6 @@ Notez que la jaunisse débute parfois par le blanc des yeux qui devient plus jau
 
 Dès le constat d’un problème de santé par vous-même ou vos proches, vous devez contacter rapidement votre médecin traitant, ou votre hépatologue référent et l’infirmière coordinatrice qui pourrons juger de la gravité de vos symptomes et vous conseillerons sur la conduite à tenir. La réalisation d’un bilan en ambulatoire voire une hospitalisation en unité de soins seront  peut etre nécessaires.
 
-
-
 ## L’appel à la greffe
 
 L’ Agence de Biomédecine gère de manière indépendante la répartition des organes sur tout le territoire français. Elle recense les greffons disponibles et les propose aux équipes de transplantation.
@@ -136,7 +128,7 @@ Un proche peut vous accompagner et rester auprès de vous dans la chambre jusqu�
 Pendant le bilan pré greffe, l’infirmière coordinatrice vous remettra un document d’information concernant le départ pour la greffe ainsi que tous les numéros de téléphone dont vous ou vos proches aurez besoins
 L’infirmière qui vous contacte lors de l’appel à la greffe vous donnera toutes les explications concernant les modalités de votre admission à l’hopital que ce soit de jour ou de nuit.
 
-Votre arrivée dans le service de chirurgie viscérale
+##Votre arrivée dans le service de chirurgie viscérale
 
 A votre arrivée, vous serez accueilli par une infirmière de chirurgie, un bilan pré opératoire vous sera fait (prélèvement sanguin et urinaire, radiographie des poumons et électrocardiogramme) et vous verrez un anesthésiste et le chirurgien transplanteur
 Si le bilan préopératoire est normal et si le greffon prélevé est jugé de bonne qualité, vous serez préparé pour l’intervention.
